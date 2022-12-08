@@ -138,6 +138,10 @@ class ExpandableTextState extends State<ExpandableText>
     setState(() => _expanded = toggledExpanded);
   }
 
+  bool isExpanded() {
+    return _expanded;
+  }
+
   void _prefixTapped() {
     widget.onPrefixTap?.call();
   }
